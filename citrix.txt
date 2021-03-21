@@ -1,0 +1,22 @@
+URL: https://www.citrix.com/downloads/workspace-app/linux/workspace-app-for-linux-latest.html
+
+# Instalar
+sudo dpkg -i ~/Downloads/icaclient_21.3.0.38_amd64.deb
+sudo dpkg -i ~/Downloads/ctxusb_21.3.0.38_amd64.deb
+
+# Baixar certificado
+https://www.entrust.com/resources/certificate-solutions/tools/root-certificate-downloads
+Baixar: (Non‐EV SSL) CA - L1K
+
+# Copiar certificado no: 
+sudo mv ~/Downloads/entrust_l1k.cer /opt/Citrix/ICAClient/keystore/cacerts/
+
+sudo /opt/Citrix/ICAClient/util/ctx_rehash
+
+# Editar os arquivos 'All_Regions.ini'
+sudo nano /etc/icaclient/config/All_Regions.ini
+nano ~/.ICAClient/All_Regions.ini
+
+# Procurar no arquivo All_Regions.ini por 'TransparentKeyPassthrough' e colocar 'Remote'
+TransparentKeyPassthrough=Remote
+

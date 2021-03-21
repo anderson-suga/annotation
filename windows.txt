@@ -1,0 +1,22 @@
+Windows 10 Pro
+slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
+
+Windows 10 Pro for Workstations
+slmgr.vbs /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
+
+Windows 10 Enterprise
+slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
+
+Windows 10 Home Single Language
+slmgr.vbs /ipk 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
+
+
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61

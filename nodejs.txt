@@ -1,0 +1,19 @@
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+# To download, compile, and install the latest release of node, do this:
+nvm install node
+
+# To install a specific version of node:
+nvm install 6.14.4
+
+# List available versions using ls-remote:
+nvm ls-remote
+
+# To set a default Node version to be used in any new shell, use the alias 'default':
+nvm alias default node
+
+# To update npm at the same time add the --latest-npm flag, like this:
+nvm install 'lts/*' --reinstall-packages-from=default --latest-npm
+
+# Or, you can at any time run the following command to get the latest supported npm version on the current node version:
+nvm install-latest-npm

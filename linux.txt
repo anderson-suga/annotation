@@ -1,0 +1,35 @@
+# Add a new line at the end of the command prompt
+PS1=${PS1%?}
+PS1=${PS1%?}\n'$ '
+
+sudo service apport stop
+sudo gedit /etc/default/apport
+
+# Instalar aplicativo Disks
+sudo apt-get install gnome-disk-utility
+
+# Instalar Thunderbird
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt-get install thunderbird
+
+# Instalar Spotify
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get install spotify-client
+
+# Instalar Dark theme no Elementary OS
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+sudo apt install elementary-tweaks
+
+# Editar sources do APT
+sudo nano /etc/apt/sources.list
+
+# Desativar single-click
+Run the following command in terminal
+    gsettings set io.elementary.files.preferences single-click false
+(To enable single-click again use true instead of false.)
+
+# Instalar o Kolourpaint
+sudo apt-get install -y kolourpaint
+

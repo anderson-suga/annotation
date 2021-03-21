@@ -1,0 +1,22 @@
+# Instalar
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt-get update
+sudo apt-get install thunderbird
+
+# Se der problema add-apt-repository, precisa instalar:
+sudo apt install software-properties-common
+
+
+# Configurar acesso com o zimbra
+Precisa selecionar o tipo IMAP, servidor tanto de input e output como: mxne.hqssolucoes.com.br automatico para testar
+
+# Configurar a agenda
+1) Menu: File > New > Calendar..
+2) Selecionar 'On the Network'
+3) Selecionar 'CalDAV'
+4) Colocar no:
+    Username: [user]@gocn.com.br
+    Location: https://mxne.hqssolucoes.com.br/dav/[user]@gocn.com.br/Calendar
+    
+# Mostrar a ageda
+Ctrl + Shift + C
