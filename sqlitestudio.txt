@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=SQLite
+Comment=SQLite
+Exec=/opt/SQLiteStudio/sqlitestudio
+Icon=/opt/SQLiteStudio/icon.png
+Terminal=false
+StartupWMClass=sqlitestudio
+Type=Application
+Categories=Network;
+MimeType=x-scheme-handler/tg;
+X-Desktop-File-Install-Version=0.22
