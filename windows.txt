@@ -20,3 +20,6 @@ slmgr.vbs /ato
 
 
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+powershell:
+New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" -Name DevicePasswordLessBuildVersion -Value 0 -Type Dword –Force
