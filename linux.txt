@@ -33,3 +33,10 @@ Run the following command in terminal
 # Instalar o Kolourpaint
 sudo apt-get install -y kolourpaint
 
+
+
+sudo apt install software-properties-gtk software-properties-common
+sudo apt install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04
+sudo add-apt-repository ppa:graphics-drivers/ppa && sudo apt update
+Software & Update
+
