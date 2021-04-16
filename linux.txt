@@ -40,3 +40,6 @@ sudo apt install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-1
 sudo add-apt-repository ppa:graphics-drivers/ppa && sudo apt update
 Software & Update
 
+sudo add-apt-repository universe
+sudo apt install exfat-fuse exfat-utils
+
