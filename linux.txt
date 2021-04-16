@@ -43,3 +43,8 @@ Software & Update
 sudo add-apt-repository universe
 sudo apt install exfat-fuse exfat-utils
 
+https://github.com/sgan81/apfs-fuse
+sudo ln -s /usr/local/bin/apfs-fuse /usr/sbin/mount.apfs
+sudo nano /etc/fstab
+
+mount.apfs#/dev/sda2    /media/<your username>/macos/    fuse    user,allow_other        0       0
