@@ -1,0 +1,78 @@
+wsl --set-default-version 2
+
+##########################################################################################
+# Linux GUI App
+############################################################################################
+1) Create file: C:\wsl\bat-launcher.vbs
+
+If WScript.Arguments.Count <= 0 Then
+    WScript.Quit
+End If	
+
+bat = Left(WScript.ScriptFullName, InStrRev(WScript.ScriptFullName, "\")) & WScript.Arguments(0) & ".bat"
+arg = ""
+
+If WScript.Arguments.Count > 1 Then
+    arg = WScript.Arguments(1)
+End If
+
+CreateObject("WScript.Shell").Run """" & bat & """ """ & arg & """", 0, False
+
+
+2) C:\wsl\start-<app_name>.bat
+
+@echo off
+x410.exe /wm
+ubuntu2004.exe run "export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0; PULSE_SERVER="tcp:$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')"  <app_name>"
+
+
+3) Create a shortcut for launching the batch file
+
+New > Shortcut 
+	wscript.exe "C:\wsl\bat-launcher.vbs" "start-<app_name>"
+
+
+############################################################################################
+# How To Get Sound (PulseAudio) To Work On WSL2
+############################################################################################
+1) Extract file 'pulse.zip' to C:\ (you should have e.g. C:\pulse\pulseaudio.exe)
+
+2) Create a file called config.pa in C:\pulse\
+
+3) Add the following and save the file:
+load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1;172.16.0.0/12
+load-module module-esound-protocol-tcp auth-ip-acl=127.0.0.1;172.16.0.0/12
+load-module module-waveout sink_name=output source_name=input record=1
+
+4) sudo apt install libpulse0
+
+5) nano ~/.bashrc
+export HOST_IP="$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')"
+export PULSE_SERVER="tcp:$HOST_IP"
+export DISPLAY="$HOST_IP:0.0"
+
+6) Extract file 'nssm-2.24.zip' and copy the win64 nssm.exe executable to C:\pulse\
+
+7) PowerShell (Run as Administrator)
+C:\pulse\nssm.exe install PulseAudio
+
+7-a) Application tab:
+	Application path: C:\pulse\pulseaudio.exe
+	Startup directory: C:\pulse
+	Arguments: -F C:\pulse\config.pa --exit-idle-time=-1
+	Service name: PulseAudio
+	
+7-b) Details tab
+	Display name: PulseAudio
+
+7-c) Click the Install service button
+
+8) Open 'Services', scroll to PulseAudio and select to Start.
+
+############################################################################################
+# Automatically Start X410 on Login
+############################################################################################
+
+1) Win + R
+2) shell:startup
+3) Drag-and-drop X410 from Windows Start to folder Startup
