@@ -1,13 +1,7 @@
 sudo dpkg-reconfigure locales
-
-on the screen scroll down and choose pt_BR.UTF8
-
-then next you will do ok and ok, and run this on the command line
-
+choose pt_BR.UTF8
 sudo update-locale LANG=pt_BR.UTF8
-
-in the end you run this
-
 setxkbmap -model abnt2 -layout br -variant abnt2
 
-and don't restart WSL yet, just try...
+# Teams // Ubuntu-20.04
+sudo apt install libsecret-1-0
