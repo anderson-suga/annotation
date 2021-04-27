@@ -3,5 +3,16 @@ choose pt_BR.UTF8
 sudo update-locale LANG=pt_BR.UTF8
 setxkbmap -model abnt2 -layout br -variant abnt2
 
-# Teams // Ubuntu-20.04
+
+## Chrome
+cd /tmp
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
+sudo apt install --fix-broken -y
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+## Microsoft Teams
 sudo apt install libsecret-1-0
+cd /tmp
+sudo curl -L -o "./teams.deb" "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=deb"
+sudo apt install ./teams.deb -y
