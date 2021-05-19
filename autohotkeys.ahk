@@ -64,6 +64,7 @@ Return
             WinRestore, Personal Desktop
         }
     }
+    SetCapsLockState, Off
 Return
 
 ; Termina o processo do programa
