@@ -2,20 +2,22 @@
 # macOS
 #########################################################################################################
 Install Xcode:
-sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-sudo xcodebuild -runFirstLaunch
-
+  sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+  sudo xcodebuild -runFirstLaunch
 
 Install cocoapods
-1) sudo gem install cocoapods
-2) nano .zshrc
-
-export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/bin:$PATH
-
+  1) sudo gem install cocoapods
+  2) nano .zshrc
+        export GEM_HOME=$HOME/.gem
+        export PATH=$GEM_HOME/bin:$PATH
 
 Installing Android SDK Command-line tools:
-1) Configure > SDK Manager
-2) From the left choose, Appearance & Behavior > System Settings > Android SDK
-3) Select SDK Tools from the top menu
-4) Check Android SDK Command-line tools and click 'apply'.
+  1) Configure > SDK Manager
+  2) From the left choose, Appearance & Behavior > System Settings > Android SDK
+  3) Select SDK Tools from the top menu
+  4) Check Android SDK Command-line tools and click 'apply'.
+
+Unable to locate adb
+  Preferences: Appearance & Behavior > System Settings > Android SDK
+  Pasta: android > app > src > main > java > io > flutter > plugins > GeneratedPluginRegistrant.java
+  Teclar: Win + ;
