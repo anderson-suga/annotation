@@ -21,3 +21,10 @@ Unable to locate adb
   Preferences: Appearance & Behavior > System Settings > Android SDK
   Pasta: android > app > src > main > java > io > flutter > plugins > GeneratedPluginRegistrant.java
   Teclar: Win + ;
+
+#########################################################################################################
+# Instalar o Dart
+#########################################################################################################
+brew tap dart-lang/dart
+brew install dart
+brew upgrade dart
