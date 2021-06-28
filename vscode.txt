@@ -1,0 +1,4 @@
+Plugins:
+  * Material Icon Theme
+  * One Dark Pro
+  * Live Server
