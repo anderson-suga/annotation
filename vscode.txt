@@ -1,4 +1,39 @@
 Plugins:
   * Material Icon Theme
-  * One Dark Pro
   * Live Server
+  * Bracket Pair Colorizer
+  * Prettier
+  * Omni Theme
+
+ctrl + shift + P => Open Settings (JSON)
+
+{
+	"editor.fontSize": 16,
+	"terminal.integrated.fontSize": 16,
+	"workbench.colorTheme": "Omni",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+	"editor.minimap.enabled": false,
+	"editor.wordWrap": "on",
+	"workbench.editor.tabSizing": "shrink",
+	"explorer.compactFolders": false,
+	"window.zoomLevel": 1,
+	
+	// formatter
+	"prettier.tabWidth": 2,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "none",
+	"prettier.arrowParens": "avoid",
+	"prettier.endOfLine": "auto",
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+}
