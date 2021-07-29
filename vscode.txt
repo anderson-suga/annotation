@@ -8,16 +8,12 @@ Plugins:
 ctrl + shift + P => Open Settings (JSON)
 
 {
-	"editor.fontSize": 16,
-	"terminal.integrated.fontSize": 16,
-	"workbench.colorTheme": "Omni",
 	"workbench.iconTheme": "material-icon-theme",
 	"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
 	"editor.minimap.enabled": false,
 	"editor.wordWrap": "on",
 	"workbench.editor.tabSizing": "shrink",
 	"explorer.compactFolders": false,
-	"window.zoomLevel": 1,
 	
 	// formatter
 	"prettier.tabWidth": 2,
