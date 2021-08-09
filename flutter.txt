@@ -22,6 +22,12 @@ Unable to locate adb
   Pasta: android > app > src > main > java > io > flutter > plugins > GeneratedPluginRegistrant.java
   Teclar: Win + ;
 
+brew install openjdk@8
+
+cd /Applications/Android\ Studio.app/Contents/jre
+ln -s ../jre jdk
+flutter doctor -v
+
 #########################################################################################################
 # Instalar o Dart
 #########################################################################################################
