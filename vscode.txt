@@ -8,6 +8,7 @@ Plugins:
 ctrl + shift + P => Open Settings (JSON)
 
 {
+	"workbench.colorTheme": "Default Dark+",
 	"workbench.iconTheme": "material-icon-theme",
 	"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
 	"editor.minimap.enabled": false,
