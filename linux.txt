@@ -50,3 +50,13 @@ sudo ln -s /usr/local/bin/apfs-fuse /usr/sbin/mount.apfs
 sudo nano /etc/fstab
 
 mount.apfs#/dev/sda2    /media/<your username>/macos/    fuse    user,allow_other        0       0
+
+
+sudo systemctl edit getty@tty1
+
+Then enter this text and save the file afterwards:
+
+Code: Select all
+    [Service]
+    ExecStart=
+    ExecStart=/sbin/agetty --autologin Your_username --noclear %I $TERM
