@@ -34,3 +34,18 @@ flutter doctor -v
 brew tap dart-lang/dart
 brew install dart
 brew upgrade dart
+
+
+#########################################################################################################
+# Instalar o Java JDK
+#########################################################################################################
+brew install openjdk@11
+sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk  
+
+java -version
+ls -lsah /Library/Java/JavaVirtualMachines/ 
+echo 'export PATH="/usr/local/opt/openjdk@11/bin:$PATH"' >> ~/.zshrc 
+
+/usr/libexec/java_home -V
+No arquivo .zshrc colocar:
+  export JAVA_HOME=$(/usr/libexec/java_home)
