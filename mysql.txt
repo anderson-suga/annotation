@@ -3,6 +3,7 @@ sudo mysql_secure_installation
 mysql -u root -p
 CREATE USER 'aki'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'aki'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
