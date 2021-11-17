@@ -15,3 +15,6 @@ sudo apt install libsecret-1-0
 cd /tmp
 sudo curl -L -o "./teams.deb" "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=deb"
 sudo apt install ./teams.deb -y
+
+
+https://medium.com/geekculture/run-docker-in-windows-10-11-wsl-without-docker-desktop-a2a7eb90556d
