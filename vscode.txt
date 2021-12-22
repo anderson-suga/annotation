@@ -1,36 +1,66 @@
-Plugins:
-  * Material Icon Theme
-  * Live Server
-  * Bracket Pair Colorizer
-  * Prettier
-  * Omni Theme
-
 ctrl + shift + P => Open Settings (JSON)
 
 {
-	"workbench.colorTheme": "Default Dark+",
-	"workbench.iconTheme": "material-icon-theme",
-	"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-	"editor.minimap.enabled": false,
-	"editor.wordWrap": "on",
-	"workbench.editor.tabSizing": "shrink",
-	"explorer.compactFolders": false,
-	
-	// formatter
-	"prettier.tabWidth": 2,
-	"prettier.semi": true,
-	"prettier.singleQuote": true,
-	"prettier.trailingComma": "none",
-	"prettier.arrowParens": "avoid",
-	"prettier.endOfLine": "auto",
-	"editor.tabSize": 2,
-	"editor.formatOnSave": true,
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	// "liveServer.settings.donotShowInfoMsg": true,
-	// "liveServer.settings.donotVerifyTags": true,
+  // Plugins & Fonts instalados:
+  // * JetBrains Mono (Fonte) - https://www.jetbrains.com/lp/mono/
+  // * Omni
+  // * Material Icon Theme
+  // * Prettier
+
+  // Configurações da fonte JetBrains Mono
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 26,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  // Demais configurações
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "editor.rulers": [80, 120],
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  "javascript.suggest.autoImports": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "json.format.enable": false
 }
