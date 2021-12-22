@@ -1,1 +1,4 @@
 https://github.com/OpenIntelWireless/itlwm/issues/616
+
+PS1="%n@%m - %d
+%# "
