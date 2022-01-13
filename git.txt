@@ -1,3 +1,13 @@
-git config --list
-git config --local user.email "your_email@abc.com"
-git config --local credential.helper cache
+nano ~/scripts/gitconfig.sh
+
+git config --local user.name $1
+git config --local user.email $2
+
+chmod +x ~/scripts/gitconfig.sh
+
+nano ~/.bashrc
+
+export PATH=$PATH:~/scripts
+export USER_TOKEN="https://<user>:<token>@"
+
+source ~/.bashrc
