@@ -6,10 +6,13 @@ ctrl + shift + P => Open Settings (JSON)
 // * Prettier
 
 {
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.minimap.enabled": false,  
+  "json.format.enable": true,
+  "workbench.iconTheme": "material-icon-theme",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -25,8 +28,6 @@ ctrl + shift + P => Open Settings (JSON)
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
-  "json.format.enable": true,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -37,6 +38,5 @@ ctrl + shift + P => Open Settings (JSON)
     "editor.tabCompletion": "onlySnippets",
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.wordBasedSuggestions": false
-  },
-  "workbench.iconTheme": "material-icon-theme"
+  }
 }
