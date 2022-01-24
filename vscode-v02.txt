@@ -1,3 +1,10 @@
+ctrl + shift + P => Open Settings (JSON)
+
+// Plugins & Fonts instalados:
+// * JetBrains Mono (Fonte) - https://www.jetbrains.com/lp/mono/
+// * Material Icon Theme
+// * Prettier
+
 {
   "editor.fontFamily": "JetBrains Mono",
   "editor.minimap.enabled": false,
