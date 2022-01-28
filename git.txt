@@ -11,3 +11,7 @@ export PATH=$PATH:~/scripts
 export USER_TOKEN="https://<user>:<token>@"
 
 source ~/.bashrc
+
+
+# gitignore local
+.git/info/exclude
