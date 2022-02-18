@@ -40,3 +40,9 @@ ctrl + shift + P => Open Settings (JSON)
     "editor.wordBasedSuggestions": false
   }
 }
+
+
+// Powershell com problema de executar yarn
+// Abrir o powershell como admin e exutar o comando
+Set-ExecutionPolicy -Scope CurrentUser
+Bypass
