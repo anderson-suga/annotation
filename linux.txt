@@ -2,6 +2,8 @@
 PS1=${PS1%?}
 PS1=${PS1%?}\n'$ '
 
+alias apt_update='sudo apt update; sudo apt list --upgradable; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autoclean -y'
+
 sudo service apport stop
 sudo gedit /etc/default/apport
 
