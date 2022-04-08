@@ -1,5 +1,19 @@
+Windows 11 Pro
+slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
 
 
+Office 2021 Pro Plus
+mkdir %TEMP%\C2R & cd %TEMP%\C2R
+curl -o %TEMP%\C2R\setup.exe "https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/C2R/setup.exe"
+curl -o %TEMP%\C2R\configuration.xml "https://filedn.com/lOX1R8Sv7vhpEG9Q77kMbn0/C2R/2021VL/ProPlus2021Volume-x64.xml"
+setup.exe /configure configuration.xml
+if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16"
+cscript ospp.vbs /sethst:kms.teevee.asia
+cscript ospp.vbs /act
+exit
 
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 
