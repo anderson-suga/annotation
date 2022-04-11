@@ -3,6 +3,10 @@ https://github.com/OpenIntelWireless/itlwm/issues/616
 PS1="%n@%m - %d
 %# "
 
+export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+
 PS1="%n@%m - %d
 %# "
 
