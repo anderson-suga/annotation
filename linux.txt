@@ -4,6 +4,15 @@ PS1=${PS1%?}\n'$ '
 
 alias apt_update='sudo apt update; sudo apt list --upgradable; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autoclean -y'
 
+# Cria um usuário novo
+sudo adduser username
+ 
+# Inclui os grupos no usuário
+sudo usermod -aG new_group,new_group2,new_group3 user_name
+ 
+# Deleta o usuário
+sudo deluser --remove-home username
+
 -------------------------------------------------------------------------------
 # Fixar IP no rockpi
 sudo nano /etc/network/interfaces
