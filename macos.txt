@@ -15,10 +15,22 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-# brew
+################################################
+# homebrew - multi-user system
+################################################
 sudo -Hu <user> brew update
 
 Colocar no ~/.zshrc
 alias brew='sudo -Hu <user> brew'
 
 onde <user> é quem instalou o homebrew
+
+################################################
+# Reformat the EFI partition
+################################################
+In Terminal:
+
+diskutil list
+Find the EFI disk number, then format:
+
+sudo newfs_msdos -v EFI /dev/diskXsX
