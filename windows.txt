@@ -11,3 +11,9 @@ Windows 11 - Botão direito do mouse (Classic)
 3. Right-click > New > Key, and paste in this name: {86ca1aa0-34aa-4e8b-a509-50c905bae2a2}
 4. With the new key you just created highlighted, again right-click > New > Key, and paste in this name: InprocServer32
 5. Double-click the (Default) registry entry and then hit Enter without typing anything to set its value to blank.
+
+
+Windows 11 Pro
+slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr.vbs /skms kms.teevee.asia
+slmgr.vbs /ato
