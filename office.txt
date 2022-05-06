@@ -1,0 +1,28 @@
+<Configuration ID="c02219d4-a5f9-48cb-955c-3b6b8470b493">
+  <Add OfficeClientEdition="64">
+    <Product ID="ProPlus2021Volume">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OneNote" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Teams" />
+    </Product>
+  </Add>
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+</Configuration>
+
+
+Powershell (admin):
+.\setup.exe /configure .\Configuration.xml
+
+
+CMD (admin):
+
+if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16"
+if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16"
+cscript ospp.vbs /sethst:kms.teevee.asia
+cscript ospp.vbs /act
