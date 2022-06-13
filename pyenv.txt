@@ -14,8 +14,10 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 git clone https://github.com/massongit/pyenv-pip-update ~/.pyenv/plugins/pyenv-pip-update
 git clone https://github.com/pyenv/pyenv-update.git ~/.pyenv/plugins/pyenv-update
+git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+echo 'export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"' >> ~/.bashrc
 
 exec "$SHELL"
 
