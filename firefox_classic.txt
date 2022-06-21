@@ -1,0 +1,15 @@
+sudo snap remove --purge firefox
+
+sudo add-apt-repository ppa:mozillateam/ppa
+
+sudo nano /etc/apt/preferences.d/99mozillateamppa
+
+Package: firefox*
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 501
+
+Package: firefox*
+Pin: release o=Ubuntu
+Pin-Priority: -1
+
+sudo apt install -t 'o=LP-PPA-mozillateam' firefox
