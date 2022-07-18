@@ -14,6 +14,9 @@ psql -U username dbname < dbexport.pgsql
 # Configure PostgreSQL to access remotely
 sudo nano /etc/postgresql/14/main/postgresql.conf
 
+#listen_addresses = 'localhost'
+listen_addresses = '*'
+
 sudo nano /etc/postgresql/14/main/pg_hba.conf
 host        all           all              0.0.0.0/0             md5
 host        all            all             ::0/0                 md5
