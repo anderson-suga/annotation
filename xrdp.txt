@@ -1,20 +1,3 @@
-echo xfce4-session >~/.xsession
-
-cp /etc/xrdp/startwm.sh /etc/xrdp/startwm.sh1
-
-sudo sh -c 'cat /dev/null > /etc/xrdp/startwm.sh'
-
-sudo vim /etc/xrdp/startwm.sh
-
-#!/bin/sh
-
-if [ -r /etc/default/locale ]; then
-  . /etc/default/locale
-  export LANG LANGUAGE
-fi
-
-startxfce4
-
 sudo service xrdp restart
 
 sudo apt install xrdp 
@@ -26,3 +9,15 @@ unset DBUS_SESSION_BUS_ADDRESS
 unset XDG_RUNTIME_DIR
 
 sudo systemctl restart xrdp
+
+----------------------------------------------------------------------
+
+sudo nano /etc/xrdp/xrdp.ini
+
+[Xvnc]
+name=Xvnc
+lib=libvnc.so
+username=ask
+password=ask
+ip=127.0.0.1
+port=5912
