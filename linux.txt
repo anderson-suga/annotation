@@ -14,6 +14,11 @@ sudo usermod -aG new_group,new_group2,new_group3 user_name
 sudo deluser --remove-home username
 
 -------------------------------------------------------------------------------
+
+# Plugin para instalar no Thuar (Xubuntu - Compactar/Descompactar com botão direito)
+sudo apt install thunar-archive-plugin
+
+-------------------------------------------------------------------------------
 # Fixar IP no rockpi
 sudo nano /etc/network/interfaces
 
