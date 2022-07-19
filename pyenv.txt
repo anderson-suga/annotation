@@ -14,11 +14,16 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 git clone https://github.com/massongit/pyenv-pip-update ~/.pyenv/plugins/pyenv-pip-update
 git clone https://github.com/pyenv/pyenv-update.git ~/.pyenv/plugins/pyenv-update
-git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
-echo 'export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"' >> ~/.bashrc
 
 exec "$SHELL"
 
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib requests beautifulsoup4 lxml html5lib praw Pillow imgur-python youtube_dl cloudscraper selenium py7zr mysql-connector-python
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# Criar venv e ativar
+python -m venv .venv
+source .venv/bin/activate
