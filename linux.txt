@@ -15,6 +15,12 @@ sudo deluser --remove-home username
 
 -------------------------------------------------------------------------------
 
+# Limpar o arquivo 
+cp /dev/null <arquivo>
+
+# Ver as portas e processos
+sudo ss -ltnp
+
 # Plugin para instalar no Thuar (Xubuntu - Compactar/Descompactar com botão direito)
 sudo apt install thunar-archive-plugin
 
