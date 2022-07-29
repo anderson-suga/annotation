@@ -11,3 +11,8 @@ Cinnamon / Ubuntu with GNOME / MATE: launch Startup Applications
 GNOME desktop running on a Linux distribution other than Ubuntu: launch the Tweaks app, and click on Startup Applications on the sidebar (in Ubuntu, Plank doesn't show up in the Tweaks Startup Applications pane, not sure why). This only allows adding the standard plank to startup, you can't add a custom Plank command (like plank -n dock2) to startup using Tweaks.
 KDE Plasma: System Settings -> Startup and Shutdown -> Autostart
 Budgie: Budgie Desktop Settings -> Autostart
+
+
+#########################################################################################
+
+sudo apt install menulibre
