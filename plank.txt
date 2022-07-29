@@ -16,3 +16,9 @@ Budgie: Budgie Desktop Settings -> Autostart
 #########################################################################################
 
 sudo apt install menulibre
+
+#########################################################################################
+
+# Desativar o dock
+gnome-extensions list
+gnome-extensions disable ubuntu-dock@ubuntu.com
