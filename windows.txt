@@ -22,3 +22,9 @@ Windows 10 Pro
 slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 slmgr.vbs /skms kms.teevee.asia
 slmgr.vbs /ato
+
+
+Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+DWORD (32-bit)
+Start_ShowClassicMode
+1
