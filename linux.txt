@@ -25,6 +25,19 @@ sudo ss -ltnp
 sudo apt install thunar-archive-plugin
 
 -------------------------------------------------------------------------------
+
+Can't access BIOS after installing PopOS
+
+You can try removing the custom UEFI boot entry in the BIOS.
+
+sudo efibootmgr -v
+# List the boot entries.
+
+I would delete the boot entry pointing to systemd-bootx64.efi
+
+and reset the boot order.
+
+-------------------------------------------------------------------------------
 # Fixar IP no rockpi
 sudo nano /etc/network/interfaces
 
