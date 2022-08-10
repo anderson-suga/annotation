@@ -38,6 +38,15 @@ I would delete the boot entry pointing to systemd-bootx64.efi
 and reset the boot order.
 
 -------------------------------------------------------------------------------
+
+Ajeitando o cedilha errado (ć) no Ubuntu Linux
+
+sudo nano /etc/environment
+
+# Colocar no final do arquivo
+GTK_IM_MODULE=cedilla
+
+-------------------------------------------------------------------------------
 # Fixar IP no rockpi
 sudo nano /etc/network/interfaces
 
