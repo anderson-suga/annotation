@@ -37,6 +37,11 @@ I would delete the boot entry pointing to systemd-bootx64.efi
 
 and reset the boot order.
 
+
+Ou
+
+systemctl reboot --firmware-setup
+
 -------------------------------------------------------------------------------
 
 Ajeitando o cedilha errado (ć) no Ubuntu Linux
