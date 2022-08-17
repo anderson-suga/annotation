@@ -49,3 +49,8 @@ echo 'export PATH="/usr/local/opt/openjdk@11/bin:$PATH"' >> ~/.zshrc
 /usr/libexec/java_home -V
 No arquivo .zshrc colocar:
   export JAVA_HOME=$(/usr/libexec/java_home)
+
+#########################################################################################################
+# Separar o emulador da janela no Android Studio
+#########################################################################################################
+Preferences -> Tools -> Emulator and uncheck Launch in a tool window
