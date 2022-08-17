@@ -10,7 +10,7 @@ ctrl + shift + P => Open Settings (JSON)
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.fontFamily": "JetBrains Mono",
-  "editor.minimap.enabled": false,  
+  "editor.minimap.enabled": false,
   "json.format.enable": true,
   "workbench.iconTheme": "material-icon-theme",
   "[html]": {
@@ -38,7 +38,11 @@ ctrl + shift + P => Open Settings (JSON)
     "editor.tabCompletion": "onlySnippets",
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.wordBasedSuggestions": false
-  }
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "files.maxMemoryForLargeFilesMB": 9000
 }
 
 
