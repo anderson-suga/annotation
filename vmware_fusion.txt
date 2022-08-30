@@ -1,0 +1,10 @@
+arquivo vmx:
+
+- Alterar:
+ethernet0.virtualDev = "vmxnet3"
+
+- Incluir no final do arquivo
+scsi0:0.virtualSSD = 1
+prefvmx.useRecommendedLockedMemSize = "TRUE"
+sched.mem.pshare.enable = "FALSE"
+MemAllowAutoScaleDown = "FALSE"
