@@ -4,3 +4,5 @@
 A=`zenity --title="Remote Desktop" --username --password`
 xfreerdp /multimon /f /floatbar:sticky:off,default:hidden -grab-keyboard /bpp:32 /cert-ignore +clipboard /v:servername.domain /d:domain /u:`echo $A | cut -d'|' -f1` /p:`echo $A | cut -d'|' -f2`
 #sleep 10s
+
+/network:[modem|broadband|broadband-low|broadband-high|wan|lan|auto
