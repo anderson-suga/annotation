@@ -34,3 +34,8 @@ diskutil list
 Find the EFI disk number, then format:
 
 sudo newfs_msdos -v EFI /dev/diskXsX
+
+
+
+
+cd ~/Desktop && mkdir CodecDump && for c in /proc/asound/card*/codec#*; do f="${c/\/*card/card}"; cat "$c" > CodecDump/${f//\//-}.txt; done && zip -r CodecDump.zip CodecDump
