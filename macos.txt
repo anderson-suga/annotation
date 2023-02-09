@@ -43,3 +43,5 @@ sudo newfs_msdos -v EFI /dev/diskXsX
 
 
 cd ~/Desktop && mkdir CodecDump && for c in /proc/asound/card*/codec#*; do f="${c/\/*card/card}"; cat "$c" > CodecDump/${f//\//-}.txt; done && zip -r CodecDump.zip CodecDump
+
+https://medium.com/macoclock/how-to-use-homebrew-on-a-multi-user-on-mac-setup-e1ff790871f0
