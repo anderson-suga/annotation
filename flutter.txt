@@ -22,10 +22,11 @@ Unable to locate adb
   Pasta: android > app > src > main > java > io > flutter > plugins > GeneratedPluginRegistrant.java
   Teclar: Win + ;
 
-brew install openjdk@8
+brew install openjdk@11
 
-cd /Applications/Android\ Studio.app/Contents/jre
-ln -s ../jre jdk
+cd /Applications/Android\ Studio.app/Contents
+ln -s jbr jre
+
 flutter doctor -v
 
 #########################################################################################################
