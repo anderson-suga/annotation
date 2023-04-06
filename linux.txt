@@ -13,6 +13,8 @@ sudo usermod -aG new_group,new_group2,new_group3 user_name
 # Deleta o usuário
 sudo deluser --remove-home username
 
+systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
 -------------------------------------------------------------------------------
 
 FlameShot
