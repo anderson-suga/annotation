@@ -7,27 +7,18 @@ export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
-PS1="%n@%m - %d
-%# "
-
 brew unistall <formula>
 brew autoremove
 brew cleanup
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
 ################################################
-# homebrew - multi-user system
+# install - go
 ################################################
-sudo -Hu <user> brew update
+tar -xvf go1.20.3.linux-amd64.tar.gz
+sudo mv go /usr/local
 
-Colocar no ~/.zshrc
-alias brew='sudo -Hu <user> brew'
-
-onde <user> é quem instalou o homebrew
+nano ~/.zshrc 
+export PATH=$PATH:/usr/local/go/bin
 
 ################################################
 # Reformat the EFI partition
@@ -39,9 +30,3 @@ Find the EFI disk number, then format:
 
 sudo newfs_msdos -v EFI /dev/diskXsX
 
-
-
-
-cd ~/Desktop && mkdir CodecDump && for c in /proc/asound/card*/codec#*; do f="${c/\/*card/card}"; cat "$c" > CodecDump/${f//\//-}.txt; done && zip -r CodecDump.zip CodecDump
-
-https://medium.com/macoclock/how-to-use-homebrew-on-a-multi-user-on-mac-setup-e1ff790871f0
