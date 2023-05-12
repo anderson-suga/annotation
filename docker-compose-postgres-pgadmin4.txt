@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=a_cool_but_difficult_password
       - POSTGRES_DB=my_database
     volumes:
-      - "./data:/var/lib/postgresql/data"
+      - ./postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     networks:
@@ -20,6 +20,8 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=root
+    volumes:
+      - ./pgadmin_data:/var/lib/pgadmin
     ports:
       - "8080:80"
     networks:
