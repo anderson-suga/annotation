@@ -1,0 +1,18 @@
+sudo chown -R $USER /opt/firefox
+
+nano ~/.local/share/applications/firefox.desktop
+
+
+[Desktop Entry]
+Name=Firefox
+GenericName=Firefox
+Exec=/opt/firefox/firefox %u
+Terminal=false
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Type=Application
+Categories=Application;Network;
+Comment=Firefox
+StartupWMClass=Firefox
+
+
+chmod +x ~/.local/share/applications/firefox.desktop
