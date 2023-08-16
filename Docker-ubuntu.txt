@@ -1,0 +1,17 @@
+version: '3'
+services:
+  ubuntu-ssh:
+    image: ubuntu
+    container_name: ubuntu-ssh-container
+    command: /bin/bash -c "apt-get update && apt-get install -y openssh-server && service ssh start && useradd -m -s /bin/bash newuser && usermod -aG sudo newuser && echo 'newuser:password' | chpasswd && tail -f /dev/null"
+    ports:
+      - "2222:22"
+    volumes:
+      - ssh-data:/etc/ssh
+      - home-data:/root
+      - root-data:/   # Adicione esta linha para persistir o diretório raiz
+
+volumes:
+  ssh-data:
+  home-data:
+  root-data:
