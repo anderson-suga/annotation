@@ -1,3 +1,6 @@
 export GOROOT=/usr/local/go
 export GOPATH=/mnt/MyFiles/workspace/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+
+https://gist.github.com/yihyang/b6096bad79f5eedd7580f14dbcdcdc10
