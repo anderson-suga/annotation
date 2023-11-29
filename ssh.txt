@@ -1,0 +1,15 @@
+Create key:
+ssh-keygen -t ed25519
+
+Create the .ssh folder in your home directory (server) and upload the id_rsa.pub file.
+Rename the file to authorized_keys (lower case)
+
+----------------------------------
+
+VS Code:
+
+Host <connection-name>
+  HostName <ip/host>
+  User <user>
+  Port <port>
+  IdentityFile <location-ssh-key>
