@@ -1,0 +1,17 @@
+https://linux.how2shout.com/how-to-start-docker-container-automatically-on-boot-in-linux/
+
+cd /etc/systemd/system
+sudo nano mycontainer.service
+
+[Unit]
+Description=My Docker Container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a linuxshout
+ExecStop=/usr/bin/docker stop -t 10 linuxshout
+
+[Install]
+WantedBy=multi-user.target
