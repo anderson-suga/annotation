@@ -1,0 +1,10 @@
+https://webdevstudios.com/2022/02/03/change-php-versions-with-homebrew/
+
+
+echo 'export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"' >> ~/.zshrc
+
+////////////////////////
+
+brew unlink php
+brew link php@7.4
