@@ -17,6 +17,10 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82
 
+// Permissão de escrita na partição
+sudo chown <your_username>:<your_username> -R /media/<mount_point>
+sudo chmod o+w -R /media/<mount_point>
+
 -------------------------------------------------------------------------------
 
 FlameShot
