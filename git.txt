@@ -1,17 +1,16 @@
-nano ~/scripts/gitconfig.sh
-
-git config --local user.name $1
-git config --local user.email $2
-
-chmod +x ~/scripts/gitconfig.sh
-
-nano ~/.bashrc
-
-export PATH=$PATH:~/scripts
-export USER_TOKEN="https://<user>:<token>@"
-
-source ~/.bashrc
+# save credentials 
+git config --global credential.helper store
 
 
 # gitignore local
 .git/info/exclude
+
+
+# projeto já existente localmente
+git init
+git remote add origin <link do repositório>
+git add .
+git add <nome do arquivo>
+git commit -m “coloque aqui o nome que desejar”
+git branch -M main
+git push origin main
