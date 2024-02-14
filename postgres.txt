@@ -5,6 +5,10 @@ postgres=# create database mydb;
 postgres=# create user myuser with encrypted password 'mypass';
 postgres=# grant all privileges on database mydb to myuser;
 
+Postgres 15+
+ALTER DATABASE mydb OWNER TO myuser;
+GRANT USAGE, CREATE ON SCHEMA public TO myuser;
+
 
 pg_dump -U username dbname > dbexport.pgsql
 
