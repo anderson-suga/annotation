@@ -8,7 +8,10 @@ postgres=# grant all privileges on database mydb to myuser;
 Postgres 15+
 GRANT ALL ON DATABASE mydb TO myuser;
 ALTER DATABASE mydb OWNER TO myuser;
+GRANT ALL ON SCHEMA public TO myuser;
 GRANT USAGE, CREATE ON SCHEMA public TO myuser;
+
+
 
 
 pg_dump -U username dbname > dbexport.pgsql
