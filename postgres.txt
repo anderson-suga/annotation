@@ -6,6 +6,7 @@ postgres=# create user myuser with encrypted password 'mypass';
 postgres=# grant all privileges on database mydb to myuser;
 
 Postgres 15+
+GRANT ALL ON DATABASE mydb TO myuser;
 ALTER DATABASE mydb OWNER TO myuser;
 GRANT USAGE, CREATE ON SCHEMA public TO myuser;
 
