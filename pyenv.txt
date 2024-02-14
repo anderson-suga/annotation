@@ -2,6 +2,11 @@ brew install openssl readline sqlite3 xz zlib tcl-tk
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+pip install pylint
+pylint --generate-rcfile > .pylintrc
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 sudo apt-get install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev python3-openssl git libedit-dev ffmpeg sqlite3 ubuntu-restricted-extras vlc unrar rar gstreamer1.0-plugins-bad p7zip-full fonts-noto -y
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
