@@ -21,6 +21,9 @@ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11
 sudo chown <your_username>:<your_username> -R /media/<mount_point>
 sudo chmod o+w -R /media/<mount_point>
 
+// Dump codec
+cd ~/Desktop && mkdir CodecDump && for c in /proc/asound/card*/codec#*; do f="${c/\/*card/card}"; cat "$c" > CodecDump/${f//\//-}.txt; done && zip -r CodecDump.zip CodecDump
+
 -------------------------------------------------------------------------------
 
 FlameShot
