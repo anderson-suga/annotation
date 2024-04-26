@@ -4,6 +4,29 @@ PS1=${PS1%?}\n'$ '
 
 alias apt_update='sudo apt update; sudo apt list --upgradable; sudo apt upgrade -y; sudo apt autoremove -y; sudo apt autoclean -y'
 
+# teclado us internacional - ç
+https://gist.github.com/ericdouglas/74469cb97188751f71bfdcd7d28f75fd
+
+sudo nano /etc/default/locale
+
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_ADDRESS=pt_BR.UTF-8
+LC_COLLATE=en_US.UTF-8
+LC_CTYPE=pt_BR.UTF-8
+LC_IDENTIFICATION=pt_BR.UTF-8
+LC_MEASUREMENT=pt_BR.UTF-8
+LC_MESSAGES=en_US.UTF-8
+LC_MONETARY=pt_BR.UTF-8
+LC_NAME=pt_BR.UTF-8
+LC_NUMERIC=pt_BR.UTF-8
+LC_PAPER=pt_BR.UTF-8
+LC_TELEPHONE=pt_BR.UTF-8
+LC_TIME=pt_BR.UTF-8
+
+rm ~/.pam_environment
+
+
 # Cria um usuário novo
 sudo adduser username
  
