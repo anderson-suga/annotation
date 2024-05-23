@@ -8,3 +8,7 @@ echo 'export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"' >> ~/.zshrc
 
 brew unlink php
 brew link php@7.4
+
+
+// Instalar o Laravel na versão 9 com redis e postgresql
+curl -s "https://laravel.build/example-app?with=redis,pgsql&php=80" | bash
