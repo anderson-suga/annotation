@@ -14,3 +14,4 @@ git add <nome do arquivo>
 git commit -m “coloque aqui o nome que desejar”
 git branch -M main
 git push origin main
+git branch --set-upstream-to=origin/main main
