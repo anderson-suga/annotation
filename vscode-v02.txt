@@ -5,6 +5,10 @@ ctrl + shift + P => Open Settings (JSON)
 // * Material Icon Theme
 // * Prettier
 
+
+https://marketplace.visualstudio.com/items?itemName=clinyong.vscode-css-modules
+https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components
+
 {
   "editor.bracketPairColorization.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
